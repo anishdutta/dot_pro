@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="./CSS/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5fdd48a981.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <title>Dot!</title>
   </head>
   <body>
       <!-- NAV -->
       <div class="centered">
         <img src="./img/logo.jpeg" class="logo-fixed img-fluid img-responsive" alt="">
-        <h3>DASH</h3>
+        <h3>DASH </h3>
         <p>Direct. Automated. Shelf. Helper.</p>
         <div class="row justify-content-center">
             <a href="#" style="margin-right: 7px;"><p>Learn more ></p></a>
@@ -28,27 +30,58 @@
             <div class="col-12 col-md-4 px-2">
               <div class="card text-center mx-auto" style="padding:10px;">
               <h5 class="card-title">Weigh</h5>
-              <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid" alt="...">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid rotate">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>DASH</h2>
+                    <p>Our technology weighs the difference in your food items to give you real-time, accurate information about your consumption rate.</p>
+                  </div>
+                </div>
+              </div>
               <div class="card-body">
-                <p class="card-text">Our technology weighs the difference in your food items to give you real-time, accurate information about your consumption rate.</p>
+                <p class="card-text"></p>
               </div>
             </div>
             </div>
             <div class="col-12 col-md-4 px-2">
               <div class="card text-center mx-auto" style="padding:10px;">
               <h5 class="card-title">Personalise</h5>
-              <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid" alt="...">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid rotate">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>DASH</h2>
+                    <p>DASH fits into your home aesthetic easily. It doesn't distract, it differentiates.</p>
+                  </div>
+                </div>
+              </div>
               <div class="card-body">
-                <p class="card-text">DASH fits into your home aesthetic easily. It doesn't distract, it differentiates.</p>
+                <p class="card-text"></p>
               </div>
             </div>
             </div>
             <div class="col-12 col-md-4 px-2">
               <div class="card text-center mx-auto" style="padding:10px;">
               <h5 class="card-title">Interact</h5>
-              <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid" alt="...">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="./img/distortion.jpeg" class="card-img img-responsive img-fluid rotate">
+              </div>
+              <div class="flip-box-back">
+                <h2>DASH</h2>
+                <p>With the DASHboard application, keep track of all the information we provide, adn enjoy benefits of our recommended diet plans made just for you.</p>
+              </div>
+            </div>
+         
+            </div>
               <div class="card-body">
-                <p class="card-text">With the DASHboard application, keep track of all the information we provide, adn enjoy benefits of our recommended diet plans made just for you.</p>
+                <p class="card-text"></p>
               </div>
             </div>
             </div>
@@ -82,6 +115,19 @@
         </div>
         <div class="row justify-content-center text-white" style="letter-spacing: 2px;">All rights reserved by <span href="#">&nbspdot.com</span></div>
       </footer>
+      <script type="text/javascript">
+
+
+        $("card-img").mouseenter(function(){
+          $(this).addClass("rotate").delay(5000).queue(function(){
+            $(this).removeClass("rotate").dequeue();
+          });
+          
+        });
+        
+        
+        
+        </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
